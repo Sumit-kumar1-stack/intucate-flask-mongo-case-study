@@ -1,0 +1,22 @@
+### Health
+GET http://127.0.0.1:5000/health
+
+### Single prompt
+POST http://127.0.0.1:5000/api/v1/generate
+Content-Type: application/json
+
+{
+  "userInput": "How much should I score in each subject to pass CA final?"
+}
+
+### Batch prompt
+POST http://127.0.0.1:5000/api/v1/generate/batch
+Content-Type: application/json
+
+{
+  "userInputs": [
+    "Explain Flask",
+    "Explain MongoDB",
+    "Explain asyncio"
+  ]
+}

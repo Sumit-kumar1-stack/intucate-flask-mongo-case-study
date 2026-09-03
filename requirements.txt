@@ -1,0 +1,4 @@
+Flask[async]>=3.1,<4
+pymongo>=4.10,<5
+python-dotenv>=1.0,<2
+pytest>=8.3,<9
